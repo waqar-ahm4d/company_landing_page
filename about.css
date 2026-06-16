@@ -1,0 +1,116 @@
+.about {
+  background: #2a2420;
+}
+.about_wrapper {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 72px;
+  align-items: center;
+}
+
+.image_wrapper {
+  display: flex;
+  justify-content: center;
+  width: 280px;
+  height: 280px;
+  margin: auto;
+  border-radius: 50%;
+  /* overflow: hidden; */
+  border: 1px solid rgba(201, 169, 110, 0.3);
+  box-shadow:
+    0 0 0 8px rgba(201, 169, 110, 0.06),
+    0 24px 64px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.image_label {
+  position: absolute;
+  bottom: 16px;
+  right: -12px;
+  background: var(--champagne-gold);
+  color: var(--deep-mocha);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 2px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.image_wrapper img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+p.section_label {
+  color: rgba(245, 240, 232, 0.7);
+  font-size: 0.97rem;
+  line-height: 1.85;
+  margin-bottom: 18px;
+}
+
+h2.section_title {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  line-height: 1.15;
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  color: var(--white);
+  position: relative;
+  padding-bottom: 22px;
+  margin-bottom: 28px;
+}
+
+h2.section_title:before {
+  content: "";
+  width: 52px;
+  height: 1px;
+  background: var(--soft-gold);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.about_text p {
+  color: rgba(245, 240, 232, 0.7);
+  font-size: 0.97rem;
+  line-height: 1.85;
+  margin-bottom: 18px;
+}
+
+.about_stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 36px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.stat_num {
+  font-family: var(--font-serif);
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: var(--soft-gold);
+  line-height: 1;
+}
+
+.stat_label {
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+@media (max-width: 1024px) {
+  .about_wrapper {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .stat_num {
+    font-size: 25px;
+  }
+
+  .stat_label {
+    font-size: 9px;
+  }
+}
