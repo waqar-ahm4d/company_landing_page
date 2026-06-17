@@ -48,29 +48,6 @@ p.section_label {
   line-height: 1.85;
   margin-bottom: 18px;
 }
-
-h2.section_title {
-  font-family: var(--font-serif);
-  font-weight: 400;
-  line-height: 1.15;
-  font-size: clamp(2.2rem, 4vw, 3.2rem);
-  color: var(--white);
-  position: relative;
-  padding-bottom: 22px;
-  margin-bottom: 28px;
-}
-
-h2.section_title:before {
-  content: "";
-  width: 52px;
-  height: 1px;
-  background: var(--soft-gold);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
-}
-
 .about_text p {
   color: rgba(245, 240, 232, 0.7);
   font-size: 0.97rem;
@@ -112,5 +89,10 @@ h2.section_title:before {
 
   .stat_label {
     font-size: 9px;
+  }
+}
+@media (max-width: 768px) {
+  .about_text p {
+    font-size: 13px;
   }
 }
